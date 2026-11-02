@@ -1,0 +1,3 @@
+# Keep operating-system metadata out of the public profile repository.
+.DS_Store
+Thumbs.db
