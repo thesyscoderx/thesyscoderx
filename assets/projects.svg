@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title description">
+  <title id="title">Three projects, one engineering journey</title>
+  <desc id="description">Meridian: backend systems. Beacon: service checks. Bifrost: learning and automation. Each private project has a distinct color and original line icon. The connection moves gently unless reduced motion is requested.</desc>
+  <style>
+    /* The moving connection is decorative, not a live health or activity indicator. */
+    .connection { stroke-dasharray: 5 10; animation: connect 6s linear infinite; }
+    @keyframes connect { to { stroke-dashoffset: -90; } }
+    @media (prefers-reduced-motion: reduce) { .connection { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="connection" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <path class="connection" d="M30 110 H1170" stroke="url(#connection)" stroke-width="2" fill="none"/>
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="1" y="10" width="378" height="200" rx="16" fill="#0b1c2b" stroke="#22d3ee"/>
+    <rect x="411" y="10" width="378" height="200" rx="16" fill="#1d1433" stroke="#a78bfa"/>
+    <rect x="821" y="10" width="378" height="200" rx="16" fill="#2b1428" stroke="#f472b6"/>
+    <g transform="translate(29 36)" fill="none" stroke="#67e8f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="40" height="12" rx="3"/>
+      <rect x="0" y="21" width="40" height="12" rx="3"/>
+      <path d="M8 6 H8.1 M8 27 H8.1 M20 12 V21 M20 33 V42 M6 42 H34"/>
+    </g>
+    <g transform="translate(439 36)" fill="none" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="20" cy="20" r="20"/>
+      <circle cx="20" cy="20" r="12" stroke-opacity="0.5"/>
+      <path d="M0 22 H11 L16 12 L23 30 L29 19 H40"/>
+    </g>
+    <g transform="translate(849 36)" fill="none" stroke="#f9a8d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 34 H42 M6 34 V6 M21 34 V0 M36 34 V6 M6 7 Q21 -4 36 7 M12 4 V34 M30 4 V34"/>
+    </g>
+    <g font-size="25" font-weight="700">
+      <text x="29" y="117" fill="#ecfeff">Meridian</text>
+      <text x="439" y="117" fill="#f5f3ff">Beacon</text>
+      <text x="849" y="117" fill="#fdf2f8">Bifrost</text>
+    </g>
+    <g font-size="16" fill="#e2e8f0">
+      <text x="29" y="146">Backend systems</text>
+      <text x="439" y="146">Service checks</text>
+      <text x="849" y="146">Learning &amp; automation</text>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.5">
+      <text x="29" y="184" fill="#67e8f9">GO / GRPC / MULTI-TENANCY</text>
+      <text x="439" y="184" fill="#c4b5fd">GO / HTTP / SMALL ITERATIONS</text>
+      <text x="849" y="184" fill="#f9a8d4">EXERCISES / PROJECTS / SRE</text>
+    </g>
+  </g>
+</svg>
